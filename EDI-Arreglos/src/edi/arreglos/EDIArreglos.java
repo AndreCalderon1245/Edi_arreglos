@@ -10,6 +10,8 @@ package edi.arreglos;
  * @author edgar
  */
 public class EDIArreglos {
+    static String[] alumnos = {"Bryan", "Cecilia", "Christofer", "Cintia", "Josue"};
+    static int[]    edades  = {21, 23, 22, 24, 20};
     
     public static void fori_fore(){
         int[] nums  = {1,2,3,4,5,6,7,8,9,0};
@@ -42,23 +44,34 @@ public class EDIArreglos {
        
     }
 
-     public static void alumnos(){
-        String[] alumnos = {"Bryan", "Cecilia", "Christofer", "Cintia", "Josue"};
-        int[]    edades  = {21, 23, 22, 24, 20};
-        
+     public static void leerAlumnos(){
+         System.out.println("Leer Alumnos");
          for (int i = 0; i < alumnos.length; i++) {
              System.out.print(alumnos[i]+ "  ");
              System.out.println(edades[i]);
          }
      }
-   
+
+     public static void editAlumnos(){
+         alumnos[0] = "Hugo";
+         alumnos[2] = "Paco";
+         alumnos[4] = "Luis";
+         System.out.println("Modificar Alumnos");
+         for (int i = 0; i < alumnos.length; i++) {
+             System.out.print(alumnos[i]+ "  ");
+             System.out.println(edades[i]);
+         }
+         
+     }
+     
      
     /**
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
-        alumnos();
+        leerAlumnos();
+        editAlumnos();
+        
      }
     
 }
