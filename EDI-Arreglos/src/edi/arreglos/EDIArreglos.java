@@ -10,13 +10,9 @@ package edi.arreglos;
  * @author edgar
  */
 public class EDIArreglos {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        // TODO code application logic here
-        int[] nums = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
+    
+    public static void fori_fore(){
+        int[] nums  = {1,2,3,4,5,6,7,8,9,0};
         int[] bnums = (int[]) nums.clone() ;
         
         System.out.println("FOR i");
@@ -43,6 +39,26 @@ public class EDIArreglos {
         for (int i : sarraycopy) {
             System.out.println(i);
         }
+       
     }
+
+     public static void alumnos(){
+        String[] alumnos = {"Bryan", "Cecilia", "Christofer", "Cintia", "Josue"};
+        int[]    edades  = {21, 23, 22, 24, 20};
+        
+         for (int i = 0; i < alumnos.length; i++) {
+             System.out.print(alumnos[i]+ "  ");
+             System.out.println(edades[i]);
+         }
+     }
+   
+     
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        // TODO code application logic here
+        alumnos();
+     }
     
 }
